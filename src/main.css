@@ -1,0 +1,60 @@
+body {
+  background: teal;
+}
+
+.general {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  border: solid;
+  background: lightgreen;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  border: solid;
+  background: lightyellow;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  border: solid;
+  background: lightblue;
+}
+
+label,
+input {
+  margin: 5px;
+  font-size: larger;
+}
+
+#general-header,
+#education-header,
+#work-header,
+h2,
+.subedu,
+.subwork,
+.row {
+  grid-column-start: span 2;
+  margin: 3px;
+}
+
+h1 {
+  justify-self: center;
+}
+
+#edu-from-date,
+#edu-to-date,
+#work-from-date,
+#work-to-date {
+  grid-column-start: span 1;
+}
+
+button {
+  background: #54adfb;
+  width: max-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
